@@ -20,6 +20,8 @@ public class RestController {
             map.put(new Random().nextInt(100) + "key", new Random().nextInt(200) + "");
             list.add(map);
         }
+
+        System.out.print(JSON.toJSONString(list));
         // List<String> list = new ArrayList<String>();
 
         return JSON.toJSONString(list);
